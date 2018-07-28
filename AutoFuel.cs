@@ -14,12 +14,14 @@ namespace Oxide.Plugins
         private bool useCampfires;
         private bool useCeilingLight;
         private bool useFurnace;
+		private bool useLargeFurnace;
         private bool useJackOLantern;
         private bool useLantern;
         private bool useSearchLight;
         private bool useTunaCanLamp;
         private bool useFireplace;
         private bool useSkullFirepit;
+		private bool useSmallOilRefinery;
 
         private bool dontRequireFuel;
 
@@ -40,6 +42,7 @@ namespace Oxide.Plugins
             useCampfires = Convert.ToBoolean(GetConfig("Types to autofuel", "Use Campfire", false));
             useCeilingLight = Convert.ToBoolean(GetConfig("Types to autofuel", "Use Ceiling Light", true));
             useFurnace = Convert.ToBoolean(GetConfig("Types to autofuel", "Use Furnace", false));
+			useLargeFurnace = Convert.ToBoolean(GetConfig("Types to autofuel", "Use Large Furnace", false));
             useJackOLantern = Convert.ToBoolean(GetConfig("Types to autofuel", "Use JackOLanterns", true));
             useLantern = Convert.ToBoolean(GetConfig("Types to autofuel", "Use Lantern", true));
             useSearchLight = Convert.ToBoolean(GetConfig("Types to autofuel", "Use Search Light", true));
@@ -47,6 +50,7 @@ namespace Oxide.Plugins
             dontRequireFuel = Convert.ToBoolean(GetConfig("Settings", "Don't require fuel", false));
             useFireplace = Convert.ToBoolean(GetConfig("Types to autofuel", "Use Fireplace", false));
             useSkullFirepit = Convert.ToBoolean(GetConfig("Types to autofuel", "Use Skull Fire Pit", false));
+			useSmallOilRefinery = Convert.ToBoolean(GetConfig("Types to autofuel", "Use Small Oil Refinery", false));
 
             if (!Changed) return;
             SaveConfig();
@@ -136,6 +140,8 @@ namespace Oxide.Plugins
                 activeShortNames.Add("ceilinglight.deployed");
             if (useFurnace)
                 activeShortNames.Add("furnace");
+			if (useLargeFurnace)
+                activeShortNames.Add("furnace.large");
             if (useJackOLantern)
             {
                 activeShortNames.Add("jackolantern.angry");
@@ -151,6 +157,8 @@ namespace Oxide.Plugins
                 activeShortNames.Add("fireplace.deployed");
             if (useSkullFirepit)
                 activeShortNames.Add("skull_fire_pit");
+			if (useSmallOilRefinery)
+                activeShortNames.Add("refinery_small_deployed");
         }
 
         private object GetConfig(string menu, string datavalue, object defaultValue)
