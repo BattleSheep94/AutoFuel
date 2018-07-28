@@ -18,7 +18,7 @@ Simply put fuel in a tool cupboard's inventory where that item is within its rad
     "Use JackOLanterns": false,
     "Use Lantern": false,
     "Use Large Furnace": true,
-    "Use Search Light": false
+    "Use Search Light": false,
     "Use Small Oil Refinery": true,
     "Use Tuna Can Lamp": false
   }
