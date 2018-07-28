@@ -30,3 +30,4 @@ Simply put fuel in a tool cupboard's inventory where that item is within its rad
 
 - **rising_ace**, for the original idea via reddit
 - **Retributive Law**, for helping with the testing
+- **Fameling**, for add Large Furnace and Small Oil Refinery
