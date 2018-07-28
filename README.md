@@ -6,17 +6,22 @@ Simply put fuel in a tool cupboard's inventory where that item is within its rad
 
 ```json
 {
+  "Settings": {
+    "Don't require fuel": false
+  },
   "Types to autofuel": {
-    "Use Barbeque": false,
-    "Use Campfire": false,
-    "Use Ceiling Light": true,
-    "Use Furnace": false,
-    "Use JackOLanterns": true,
-    "Use Lantern": true,
-    "Use Large Furnace": false,
-    "Use Search Light": true,
-    "Use Small Oil Refinery": false,
-    "Use Tuna Can Lamp": true
+    "Use Barbeque": true,
+    "Use Campfire": true,
+    "Use Ceiling Light": false,
+    "Use Fireplace": true,
+    "Use Furnace": true,
+    "Use JackOLanterns": false,
+    "Use Lantern": false,
+    "Use Large Furnace": true,
+    "Use Search Light": false,
+    "Use Skull Fire Pit": false,
+    "Use Small Oil Refinery": true,
+    "Use Tuna Can Lamp": false
   }
 }
 ```
