@@ -19,6 +19,7 @@ Simply put fuel in a tool cupboard's inventory where that item is within its rad
     "Use Lantern": false,
     "Use Large Furnace": true,
     "Use Search Light": false,
+    "Use Skull Fire Pit": false,
     "Use Small Oil Refinery": true,
     "Use Tuna Can Lamp": false
   }
@@ -29,4 +30,4 @@ Simply put fuel in a tool cupboard's inventory where that item is within its rad
 
 - **rising_ace**, for the original idea via reddit
 - **Retributive Law**, for helping with the testing
-- **Fameling**, for add Large Furnace and Small Oil Refinery
+- **Fameling**, for add large furnace and small oil refinery support
