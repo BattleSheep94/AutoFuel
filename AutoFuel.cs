@@ -17,11 +17,13 @@ namespace Oxide.Plugins
 		private bool useLargeFurnace;
         private bool useJackOLantern;
         private bool useLantern;
+		private bool useFogmachine;
         private bool useSearchLight;
         private bool useTunaCanLamp;
         private bool useFireplace;
         private bool useSkullFirepit;
 		private bool useSmallOilRefinery;
+		
 
         private bool dontRequireFuel;
 
@@ -45,6 +47,7 @@ namespace Oxide.Plugins
 			useLargeFurnace = Convert.ToBoolean(GetConfig("Types to autofuel", "Use Large Furnace", false));
             useJackOLantern = Convert.ToBoolean(GetConfig("Types to autofuel", "Use JackOLanterns", true));
             useLantern = Convert.ToBoolean(GetConfig("Types to autofuel", "Use Lantern", true));
+            useFogmachine = Convert.ToBoolean(GetConfig("Types to autofuel", "Use Fogmachine", true));
             useSearchLight = Convert.ToBoolean(GetConfig("Types to autofuel", "Use Search Light", true));
             useTunaCanLamp = Convert.ToBoolean(GetConfig("Types to autofuel", "Use Tuna Can Lamp", true));
             dontRequireFuel = Convert.ToBoolean(GetConfig("Settings", "Don't require fuel", false));
@@ -149,6 +152,8 @@ namespace Oxide.Plugins
             }
             if (useLantern)
                 activeShortNames.Add("lantern.deployed");
+            if (useFogmachine)
+                activeShortNames.Add("fogmachine");
             if (useSearchLight)
                 activeShortNames.Add("searchlight.deployed");
             if (useTunaCanLamp)
