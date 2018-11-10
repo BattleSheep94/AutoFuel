@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace Oxide.Plugins
 {
-    [Info("Auto Fuel", "redBDGR", "1.0.7")]
+    [Info("Auto Fuel", "redBDGR edit by BattleSheep", "1.0.8")]
     [Description("Automatically fuels lights using fuel from the tool cupboard's inventory")]
     class AutoFuel : RustPlugin
     {
