@@ -17,6 +17,7 @@ Simply put fuel in a tool cupboard's inventory where that item is within its rad
     "Use Furnace": true,
     "Use JackOLanterns": false,
     "Use Lantern": false,
+    "Use Fogmachine": false,
     "Use Large Furnace": true,
     "Use Search Light": false,
     "Use Skull Fire Pit": false,
