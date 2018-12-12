@@ -8,6 +8,7 @@ Simply put fuel in a tool cupboard's inventory where that item is within its rad
 {
   "Settings": {
     "Don't require fuel": false
+    "permissionName": "autofuel.use"
   },
   "Types to autofuel": {
     "Use Barbeque": true,
